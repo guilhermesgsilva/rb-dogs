@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# RB Dogs
+
+Application developed in the context of the RB Pharma recruitment process for the Front-End Developer position.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
