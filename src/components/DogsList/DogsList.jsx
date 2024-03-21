@@ -1,4 +1,5 @@
-import { useContext, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 import { AppContext } from "../../context/AppContext";
 import useBreedsList from "../../state/useBreedsList";
@@ -11,27 +12,38 @@ import { StyledListWrapper } from "./DogsList.styles";
 export const ITEMS_PER_PAGE = 12;
 
 const DogsList = () => {
+  let [searchParams, setSearchParams] = useSearchParams();
   const { state: dogs } = useContext(AppContext);
-  const [currentPage, setCurrentPage] = useState(0);
+  const [currentPage, setCurrentPage] = useState(1);
   const { breedsList } = useBreedsList({ dogs });
 
   const totalPages = useMemo(() => {
     return Math.ceil(breedsList?.length / ITEMS_PER_PAGE);
   }, [breedsList]);
 
+  const lastIndex = useMemo(() => {
+    return currentPage * ITEMS_PER_PAGE;
+  }, [currentPage]);
+
+  const firstIndex = useMemo(() => {
+    return lastIndex - ITEMS_PER_PAGE;
+  }, [lastIndex]);
+
   const breedsToShow = useMemo(() => {
-    return breedsList?.slice(
-      currentPage * ITEMS_PER_PAGE,
-      currentPage * ITEMS_PER_PAGE + ITEMS_PER_PAGE
-    );
-  }, [breedsList, currentPage]);
+    return breedsList?.slice(firstIndex, lastIndex);
+  }, [breedsList, firstIndex, lastIndex]);
+
+  useEffect(() => {
+    const newPage = searchParams.get("page") || 1;
+    setCurrentPage(newPage);
+  }, [searchParams]);
 
   return (
     <>
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
+        setSearchParams={setSearchParams}
       />
       <StyledListWrapper>
         {breedsToShow &&
@@ -42,7 +54,7 @@ const DogsList = () => {
       <Pagination
         totalPages={totalPages}
         currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
+        setSearchParams={setSearchParams}
       />
     </>
   );

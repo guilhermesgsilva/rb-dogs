@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 import { StyledPaginatioWrapper, StyledButton } from "./Pagination.styles";
 
-const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
+const Pagination = ({ totalPages, currentPage, setSearchParams }) => {
   const pagesArray = useMemo(() => {
     return Array.from({ length: totalPages }, (item, index) => index + 1);
   }, [totalPages]);
@@ -10,9 +10,9 @@ const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
   return (
     <StyledPaginatioWrapper>
       <StyledButton
-        disabled={currentPage === 0}
+        disabled={currentPage == 1}
         onClick={() => {
-          currentPage > 0 && setCurrentPage(currentPage - 1);
+          currentPage > 1 && setSearchParams({ page: currentPage - 1 });
         }}
       >
         {"<"}
@@ -21,9 +21,9 @@ const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
         return (
           <StyledButton
             key={index}
-            disabled={currentPage === item - 1}
+            disabled={currentPage == item}
             onClick={() => {
-              setCurrentPage(item - 1);
+              setSearchParams({ page: item });
             }}
           >
             <p key={index}>{item}</p>
@@ -31,9 +31,10 @@ const Pagination = ({ totalPages, currentPage, setCurrentPage }) => {
         );
       })}
       <StyledButton
-        disabled={currentPage === totalPages - 1}
+        disabled={currentPage == totalPages}
         onClick={() => {
-          currentPage < totalPages - 1 && setCurrentPage(currentPage + 1);
+          currentPage < totalPages &&
+            setSearchParams({ page: currentPage + 1 });
         }}
       >
         {">"}
