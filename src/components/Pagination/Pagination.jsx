@@ -12,7 +12,7 @@ const Pagination = ({ totalPages, currentPage, setSearchParams }) => {
       <StyledButton
         disabled={currentPage == 1}
         onClick={() => {
-          currentPage > 1 && setSearchParams({ page: currentPage - 1 });
+          currentPage > 1 && setSearchParams({ page: Number(currentPage) - 1 });
         }}
       >
         {"<"}
@@ -34,7 +34,7 @@ const Pagination = ({ totalPages, currentPage, setSearchParams }) => {
         disabled={currentPage == totalPages}
         onClick={() => {
           currentPage < totalPages &&
-            setSearchParams({ page: currentPage + 1 });
+            setSearchParams({ page: Number(currentPage) + 1 });
         }}
       >
         {">"}
