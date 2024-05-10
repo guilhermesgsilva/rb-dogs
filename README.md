@@ -1,6 +1,6 @@
 # RB Dogs
 
-Application developed in the context of the RB Pharma recruitment process for the Front-End Developer position.
+Application developed in the context of the [RB Pharma](https://www.linkedin.com/company/rb-pharma/) recruitment process for the Front-End Developer position.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
