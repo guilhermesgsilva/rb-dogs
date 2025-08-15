@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/rb-dogs/static/css/main.e6c13ad2.css",
+    "main.js": "/rb-dogs/static/js/main.689f5570.js",
+    "static/js/453.fe8c64ee.chunk.js": "/rb-dogs/static/js/453.fe8c64ee.chunk.js",
+    "index.html": "/rb-dogs/index.html",
+    "main.e6c13ad2.css.map": "/rb-dogs/static/css/main.e6c13ad2.css.map",
+    "main.689f5570.js.map": "/rb-dogs/static/js/main.689f5570.js.map",
+    "453.fe8c64ee.chunk.js.map": "/rb-dogs/static/js/453.fe8c64ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.689f5570.js"
+  ]
+}
