@@ -28,7 +28,7 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 
 [Live Demo](https://guilhermesgsilva.github.io/rb-dogs/)
 
---
+---
 
 ## 🛠️ Tech Stack
 
