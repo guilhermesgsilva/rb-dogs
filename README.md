@@ -3,8 +3,6 @@
 A React-based web application developed as part of the **[RB Pharma](https://www.linkedin.com/company/rb-pharma/) recruitment process** for the **Front-End Developer** position.  
 The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and consumes the [Dog CEO REST API](https://dog.ceo/api/breeds/list/all) to display a paginated grid of dog breeds, with a clean, modern UI built using **Material UI** and **Emotion**.
 
----
-
 ## 📋 Features
 
 - **Dynamic Grid of Dog Breeds**  
@@ -22,13 +20,9 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 - **Modern UI**  
   Styled with **Material UI** components and **Emotion** for custom CSS-in-JS styling.
 
----
-
 ## Demo
 
 [Live Demo](https://guilhermesgsilva.github.io/rb-dogs/)
-
----
 
 ## 🛠️ Tech Stack
 
@@ -38,8 +32,6 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 - **Dog CEO API** (data source)
 - **JavaScript (ES6+)**
 - **Flexbox** (grid layout)
-
----
 
 ## 📦 Installation & Setup
 
@@ -61,8 +53,6 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 
 4. Open the app in your browser at `http://localhost:3000/`
 
---
-
 ## 📂 Project Structure
 
 ```
@@ -75,8 +65,6 @@ src/
   ├── App.js             # Root application component
   └── index.js           # Entry point
 ```
-
---
 
 ## 🚀 Usage
 
