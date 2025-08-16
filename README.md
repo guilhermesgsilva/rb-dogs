@@ -11,7 +11,7 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 - **Error Handling** - Gracefully handles API errors with user-friendly messages.
 - **Modern UI** - Styled with **Material UI** components and **Emotion** for custom CSS-in-JS styling.
 
-## Demo
+## 📺 Demo
 
 [Live Demo](https://guilhermesgsilva.github.io/rb-dogs/)
 
@@ -64,4 +64,6 @@ src/
 3. If an error occurs, a friendly error message will be shown.
 4. While fetching data, a loading spinner is displayed.
 
-## 💻 Developed by [Guilherme Silva](https://github.com/guilhermesgsilva)
+## 💻 Developed by
+
+[Guilherme Silva](https://github.com/guilhermesgsilva)
