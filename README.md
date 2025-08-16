@@ -1,72 +1,90 @@
-# RB Dogs
+# 🐶 RB Dogs
 
-Application developed in the context of the [RB Pharma](https://www.linkedin.com/company/rb-pharma/) recruitment process for the Front-End Developer position.
+A React-based web application developed as part of the **[RB Pharma](https://www.linkedin.com/company/rb-pharma/) recruitment process** for the **Front-End Developer** position.  
+The project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and consumes the [Dog CEO REST API](https://dog.ceo/api/breeds/list/all) to display a paginated grid of dog breeds, with a clean, modern UI built using **Material UI** and **Emotion**.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 📋 Features
 
-In the project directory, you can run:
+- **Dynamic Grid of Dog Breeds**  
+  Uses Flexbox for responsive layout. Displays all breeds from the API with pagination.
 
-### `npm start`
+- **Paging Support**  
+  Navigate through breeds with simple, intuitive pagination controls.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Loading States**  
+  Visual indicators while fetching data from the API.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Error Handling**  
+  Gracefully handles API errors with user-friendly messages.
 
-### `npm test`
+- **Modern UI**  
+  Styled with **Material UI** components and **Emotion** for custom CSS-in-JS styling.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Live Demo](https://guilhermesgsilva.github.io/rb-dogs/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+--
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tech Stack
 
-### `npm run eject`
+- **React** (functional components + hooks)
+- **Material UI** (UI components)
+- **Emotion** (styling)
+- **Dog CEO API** (data source)
+- **JavaScript (ES6+)**
+- **Flexbox** (grid layout)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/guilhermesgsilva/rb-dogs.git
+   cd rb-dogs
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+   ```sh
+   npm install  # or yarn install
+   ```
 
-## Learn More
+3. Start the development server:
+   ```sh
+   npm run dev  # or yarn dev
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Open the app in your browser at `http://localhost:3000/`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+--
 
-### Code Splitting
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+src/
+  ├── api/               # API service calls
+  ├── components/        # Reusable components (List, Item, etc.)
+  ├── context/           # 
+  ├── pages/             # Page-level components
+  ├── state/             # 
+  ├── App.js             # Root application component
+  └── index.js           # Entry point
+```
 
-### Analyzing the Bundle Size
+--
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🚀 Usage
 
-### Making a Progressive Web App
+1. Open the app in your browser.
+2. Browse the list of dog breeds in a paginated grid.
+3. If an error occurs, a friendly error message will be shown.
+4. While fetching data, a loading spinner is displayed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+--
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed by [Guilherme Silva](https://github.com/guilhermesgsilva)
