@@ -64,6 +64,4 @@ src/
 3. If an error occurs, a friendly error message will be shown.
 4. While fetching data, a loading spinner is displayed.
 
---
-
-Developed by [Guilherme Silva](https://github.com/guilhermesgsilva)
+## 💻 Developed by [Guilherme Silva](https://github.com/guilhermesgsilva)
