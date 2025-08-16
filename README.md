@@ -5,20 +5,11 @@ The project was bootstrapped with [Create React App](https://github.com/facebook
 
 ## 📋 Features
 
-- **Dynamic Grid of Dog Breeds**  
-  Uses Flexbox for responsive layout. Displays all breeds from the API with pagination.
-
-- **Paging Support**  
-  Navigate through breeds with simple, intuitive pagination controls.
-
-- **Loading States**  
-  Visual indicators while fetching data from the API.
-
-- **Error Handling**  
-  Gracefully handles API errors with user-friendly messages.
-
-- **Modern UI**  
-  Styled with **Material UI** components and **Emotion** for custom CSS-in-JS styling.
+- **Dynamic Grid of Dog Breeds** - Uses Flexbox for responsive layout. Displays all breeds from the API with pagination.
+- **Paging Support** - Navigate through breeds with simple, intuitive pagination controls.
+- **Loading States** - Visual indicators while fetching data from the API.
+- **Error Handling** - Gracefully handles API errors with user-friendly messages.
+- **Modern UI** - Styled with **Material UI** components and **Emotion** for custom CSS-in-JS styling.
 
 ## Demo
 
